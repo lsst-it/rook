@@ -1,0 +1,37 @@
+apiVersion: v1
+entries:
+  rook-ceph:
+  - apiVersion: v2
+    appVersion: v1.17.0-lsst1
+    created: "2025-02-26T12:42:09.145146161-07:00"
+    dependencies:
+    - name: library
+      repository: file://../library
+      version: 0.0.1
+    description: File, Block, and Object Storage Services for your Cloud-Native Environment
+    digest: 04d53d46037b99611ddabc1ea9b4d50239e8ffa6c4375b6a3fa74c063f19d8ac
+    icon: https://rook.io/images/rook-logo.svg
+    name: rook-ceph
+    sources:
+    - https://github.com/rook/rook
+    urls:
+    - rook-ceph-v1.17.0-lsst1.tgz
+    version: v1.17.0-lsst1
+  rook-ceph-cluster:
+  - apiVersion: v2
+    appVersion: v1.17.0-lsst1
+    created: "2025-02-26T12:42:09.141667238-07:00"
+    dependencies:
+    - name: library
+      repository: file://../library
+      version: 0.0.1
+    description: Manages a single Ceph cluster namespace for Rook
+    digest: 82bf76668dfebece444079a5cc9d56185dfd578d87c923ae15652627bb02fcc0
+    icon: https://rook.io/images/rook-logo.svg
+    name: rook-ceph-cluster
+    sources:
+    - https://github.com/rook/rook
+    urls:
+    - rook-ceph-cluster-v1.17.0-lsst1.tgz
+    version: v1.17.0-lsst1
+generated: "2025-02-26T12:42:09.140118102-07:00"
