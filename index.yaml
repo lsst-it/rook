@@ -2,8 +2,29 @@ apiVersion: v1
 entries:
   rook-ceph:
   - apiVersion: v2
+    appVersion: v1.18.10-lsst1
+    created: "2026-01-29T15:53:31.92334071-07:00"
+    dependencies:
+    - name: library
+      repository: file://../library
+      version: 0.0.1
+    - alias: ceph-csi-operator
+      condition: csi.rookUseCsiOperator
+      name: ceph-csi-operator
+      repository: https://ceph.github.io/ceph-csi-operator
+      version: 0.4.1
+    description: File, Block, and Object Storage Services for your Cloud-Native Environment
+    digest: b510c3a2a994e7ebc1f88972eaea6e100af602edf03b3e569fd42ada7b6a0804
+    icon: https://rook.io/images/rook-logo.svg
+    name: rook-ceph
+    sources:
+    - https://github.com/rook/rook
+    urls:
+    - rook-ceph-v1.18.10-lsst1.tgz
+    version: v1.18.10-lsst1
+  - apiVersion: v2
     appVersion: v1.17.0-lsst2
-    created: "2025-04-04T12:29:51.070398313-07:00"
+    created: "2026-01-29T15:53:31.91479423-07:00"
     dependencies:
     - name: library
       repository: file://../library
@@ -19,7 +40,7 @@ entries:
     version: v1.17.0-lsst2
   - apiVersion: v2
     appVersion: v1.17.0-lsst1
-    created: "2025-04-04T12:29:51.067423792-07:00"
+    created: "2026-01-29T15:53:31.911279438-07:00"
     dependencies:
     - name: library
       repository: file://../library
@@ -35,8 +56,24 @@ entries:
     version: v1.17.0-lsst1
   rook-ceph-cluster:
   - apiVersion: v2
+    appVersion: v1.18.10-lsst1
+    created: "2026-01-29T15:53:31.90778318-07:00"
+    dependencies:
+    - name: library
+      repository: file://../library
+      version: 0.0.1
+    description: Manages a single Ceph cluster namespace for Rook
+    digest: e8be200ea7dcb8efd3d0ab29a31056914c4fd694f0bf56393ae1a2e9b73ea004
+    icon: https://rook.io/images/rook-logo.svg
+    name: rook-ceph-cluster
+    sources:
+    - https://github.com/rook/rook
+    urls:
+    - rook-ceph-cluster-v1.18.10-lsst1.tgz
+    version: v1.18.10-lsst1
+  - apiVersion: v2
     appVersion: v1.17.0-lsst2
-    created: "2025-04-04T12:29:51.064457798-07:00"
+    created: "2026-01-29T15:53:31.906103369-07:00"
     dependencies:
     - name: library
       repository: file://../library
@@ -52,7 +89,7 @@ entries:
     version: v1.17.0-lsst2
   - apiVersion: v2
     appVersion: v1.17.0-lsst1
-    created: "2025-04-04T12:29:51.053651727-07:00"
+    created: "2026-01-29T15:53:31.904675619-07:00"
     dependencies:
     - name: library
       repository: file://../library
@@ -66,4 +103,4 @@ entries:
     urls:
     - rook-ceph-cluster-v1.17.0-lsst1.tgz
     version: v1.17.0-lsst1
-generated: "2025-04-04T12:29:51.05218192-07:00"
+generated: "2026-01-29T15:53:31.903191605-07:00"
